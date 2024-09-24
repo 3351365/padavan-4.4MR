@@ -29,6 +29,9 @@ echo "CONFIG_FIRMWARE_INCLUDE_TROJAN=n" >> .config #集成trojan执行文件  ~1
 echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=n" >> .config #simple-obfs混淆插件
 ##科学上网##
 
+##https##
+echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=y" >> .config #https
+
 ##广告管理##
 echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=n" >> .config #adbyby plus+
 
