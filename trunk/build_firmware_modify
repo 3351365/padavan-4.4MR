@@ -29,6 +29,11 @@ echo "CONFIG_FIRMWARE_INCLUDE_TROJAN=n" >> .config #集成trojan执行文件  ~1
 echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=n" >> .config #simple-obfs混淆插件
 ##科学上网##
 
+##ssh##
+sed -i 's/CONFIG_FIRMWARE_INCLUDE_DROPBEAR=y/CONFIG_FIRMWARE_INCLUDE_DROPBEAR=n/g' .config
+echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=y" >> .config #OPENSSH openssl ~1.2MB, openssh ~1.0MB
+echo "CONFIG_FIRMWARE_INCLUDE_SFTP=y" >> .config #SFTP openssl ~1.2MB, sftp-server ~0.06MB
+
 ##https##
 echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=y" >> .config #https
 
