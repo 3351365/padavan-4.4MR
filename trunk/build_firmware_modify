@@ -34,6 +34,14 @@ sed -i 's/CONFIG_FIRMWARE_INCLUDE_DROPBEAR=y/CONFIG_FIRMWARE_INCLUDE_DROPBEAR=n/
 echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=y" >> .config #OPENSSH openssl ~1.2MB, openssh ~1.0MB
 echo "CONFIG_FIRMWARE_INCLUDE_SFTP=y" >> .config #SFTP openssl ~1.2MB, sftp-server ~0.06MB
 
+##OPENVPN##
+echo "CCONFIG_FIRMWARE_INCLUDE_OPENVPN=y" >> .config #Include OpenVPN. IPv6 required. openssl ~1.2MB, openvpn ~0.4MB
+echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER=y" >> .config #Include OpenVPN. IPv6 required. openssl ~1.2MB, openvpn ~0.4MB
+echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CLIENT=y" >> .config #Include OpenVPN. IPv6 required. openssl ~1.2MB, openvpn ~0.4MB
+echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CMD=y" >> .config #Include OpenVPN. IPv6 required. openssl ~1.2MB, openvpn ~0.4MB
+
+
+
 ##https##
 echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=y" >> .config #https
 
